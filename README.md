@@ -88,3 +88,79 @@ Options -> Configure TeXStudio里
 
 如果你看不懂这个为什么是懒人包以及怎么用，说明你没有学习Emacs，请自行Google学习。
 
+### Emacs简介
+
+#### 神器的传说
+在这个蔚蓝色的星球上，流传着两大神器的传说： 据说Emacs是神的编辑器，而Vim是编辑器之神。追求独步天下的高手和低手们争着一睹它们的风采，可看到它们朴素单薄的界面后，不禁心下怀疑：这就是神器吗？甚至有人生了轻视之心。肤浅的人嗤之以鼻，说：什么年代了，还抱着这么老土的玩意不放，真他妈Geek！同学，请冷静下来，听我说：它们的确够老了，都几十年的寿命了，但你想想为什么，为什么这么古老的编辑器，却有越来越多的人皈依它们。
+
+曾几何时，Windows用户对软件的可扩展性没有概念，他们只能对他们使用的软件进行非常有限的定制。扩展软件的权利保留在软件开发者手中。软件的使用者如果想要新的功能和特性，只能等待软件的升级。有能力的用户等不及了，为了添加自己想要的功能，从0开始写了一款新的软件。就这样，新的功能意味着新的软件，Windows下的软件前赴后继，迅速地更新换代着。因此，Windows下的软件都很短命。
+
+Linux和开源软件渐渐流行起来，人们才发现：可扩展性才能给软件强大的生命。在MS的VS横行的今天，Eclipse为什么被评为最好的IDE？就是因为它在IDE中最具可扩展性。在IE几乎一统天下的时候，为什么Firefox能夺走越来越多的用户，也是因为它的可扩展性。提供了良好的扩展接口，用户自然会写出各种各样的插件，来满足用户自己形形色色的要求。这样，软件在用户的推动下自然变得强大了。
+
+Emacs和Vim没有被时代淘汰，反而越发强大，也正是因为在数不清的编辑器中，他们具有无可匹敌的可扩展性。
+
+有句夸张的话说：Emacs是伪装成编辑器的操作系统。细细想来，这句话并不夸张。
+
+Emacs其实是个Lisp的解释器，因此可以用Lisp灵活地扩展。Lisp是什么东西，这同样是种很有生命力的编程语言。在C语言还没有发明的年代，MIT的人工智能实验室写ITS操作系统时，一部分用的是汇编语言，还有一部分就是用的Lisp。现在，Lisp仍在人工智能研究领域广泛使用着。
+
+有这么牛逼的扩展语言，注定Emacs向着无所不能的方向发展。渐渐地，人们用Emacs不再限于写程序，写文档，而且在Emacs里管理文件系统，运行终端，收邮件，上网，听音乐……，真是一发不可收拾。甚至，有人用Emacs控制咖啡机煮咖啡。
+
+Vim是Vi最受欢迎的变种之一，除了继承了Vi迅捷的编辑方式，Vim的功能已经比原始的Vi强大得多。这也得益于它可以用Vim脚本无限地扩展。Vim.org 上已经有数千个脚本了，给Vim增加各种各样的特性和功能。
+
+为了证明Vim的可扩展性不输于Emacs，也有用户写了在Vim中玩游戏、运行Shell、和集成GDB在Vim内部调试的插件。客观地讲，Vim的脚本语言与Emacs的ELisp相比，略显逊色，但这丝毫不妨碍它把Vim扩展成非常优秀的编辑器。
+
+海纳百川，有容乃大。Emacs和Vim通过别的编辑器无法比肩的可扩展性，不断吸收广大用户的智慧，是它们能成为“神器”的原因之一。
+
+#### 为什么选择Emacs/Vim：黑客的编辑器，为编程而生
+
+Vim的前身Vi的作者Bill Joy和Emacs的作者Richard Stallman都是那个时代著名的黑客，所以这两款编辑器一开始面向的主要用户就是写程序的人，现在仍然是。它们对编程加入了越来越多的支持，如语法高亮、智能缩进、关键字补全甚至集成调试。也有越来越多的程序员从IDE转向了Vim和Emacs。
+
+用Vim和Emacs编程到底有什么好处？我想首先是它们高效的编辑操作会提高你的编程效率。其次你可以用它们完成各种语言的编程，所谓一剑在手，夫复何求。你不用再因为编程语言不同去学习不同的IDE的使用，那些庞大的IDE的升级换代也与你再不相关，你把精力用于学习编程语言本身就好了。听说Google和微软内部开发也都不用IDE的，他们也会用Emacs或Vim。
+
+因为我写的程序不多，还不能深入体会用Vim或Emacs开发程序的乐趣。我只是觉得这很酷，你看，Linux之父Linus多年来用的是一款MicroEmacs，它比GNU Emacs或XEmacs少许多功能，但Linus就是用它在维护Linux。 微软的大牛Don Box，Com之父，一直用Emacs，他说谁也不能夺走他的编辑器。他还在网上放了一段他用Emacs写C#程序的视频。
+
+编程大师们的选择，也是Emacs和Vim被追捧为神器的原因之一。
+
+#### 跨越世纪的圣战
+
+Vim用户和Emacs用户有着旗鼓相当的品位，应该互相欣赏才对。现实却是，忠诚于Vim的用户和忠诚于Emacs的用户互不相容，常常没完没了地打口水仗。Emacs用户说Vim的操作方式单一而古怪，Vim用户说Emacs体积庞大，启动缓慢。
+
+很有点一山不容二虎的意思，大概因为二者都处于神器的高度，才会斗争不断吧。也可能是因为二者截然不同的设计哲学吸引的用户在价值观上也互不认同。
+
+正因为两者难分高下，新人总是在Vim和Emacs之间犹豫不定，很难决定到底要皈依哪一个神。
+
+P.S.上面的内容来自[这里](https://linuxtoy.org/archives/why-emacs-vim-good.html)
+
+### 现在就尝试Emacs！
+
+[Emacs官网下载（Linux，Windows，Mac）](https://www.gnu.org/software/emacs/)
+
+免费学习：
+* [GNU Emacs Manual](https://www.gnu.org/software/emacs/manual/html_node/emacs/index.html)
+* [An Introduction to Programming in Emacs Lisp](https://www.gnu.org/software/emacs/manual/html_node/eintr/index.html)
+* [Emacs Lisp Reference Manual](https://www.gnu.org/software/emacs/manual/html_node/elisp/index.html)
+
+### 写LaTeX使用的Emacs插件介绍
+
+#### 核心插件：AUCTeX
+
+AUCTeX是在Emacs中添加LaTeX支持的插件，它可以在Emacs中编译、预览LaTeX。（注意TeXStudio不能预览）
+
+编译只需要按`C-c C-c`，手快的同学非常方便。并且在编译完成后可以自动刷新预览窗口。编译前同样要设置编译引擎为xetex，用`M-x TeX-engine-set RET`命令。记得输完命令敲下`TAB`，有自动补全。
+
+![Emacs编译与预览](pics/emacs0.png)
+
+其中我用的内嵌式pdf浏览器来浏览pdf。可以设置成别的pdf阅读器，譬如说Okular
+
+AUCTeX在浏览pdf的同时支持从定位定位，按下`C-c C-v`就可以
+
+![Emacs源代码定位](pics/emacs1.png)
+
+我在光标处按下了`C-c C-v`，右侧文档出现了箭头。
+
+下面是AUCTeX预览功能的展示，对着公式按下`C-c C-c C-p`
+![Emacs源代码定位](pics/emacs2.png)
+
+有一点需要注意的就是预览功能仅支持部分Emacs主题，譬如说whiteboard。用`M-x load-theme RET`命令
+
+#### 辅助插件：CDLatex
