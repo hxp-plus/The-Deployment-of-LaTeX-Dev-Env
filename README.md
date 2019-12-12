@@ -2,6 +2,7 @@
 # LaTeX开发环境的部署
 
 ## TeX Live + TeXStudio环境的安装
+(本文含有大量超链接，请按住Ctrl点击链接，这样可以在新窗口打开链接)
 ### 对于广大Windows用户
 #### 安装TeX Live环境
 下载安装包大约3点多个G，因此为了快速下载不推荐去国外的地址下载。在这里提供一个清华大学的镜像站，[点击这里直接下载](mirrors.tuna.tsinghua.edu.cn/CTAN/systems/texlive/Images/texlive2019-20190410.iso)，用校园网下载大约20分钟。
@@ -159,8 +160,39 @@ AUCTeX在浏览pdf的同时支持从定位定位，按下`C-c C-v`就可以
 我在光标处按下了`C-c C-v`，右侧文档出现了箭头。
 
 下面是AUCTeX预览功能的展示，对着公式按下`C-c C-c C-p`
-![Emacs源代码定位](pics/emacs2.png)
+
+![Emacs预览](pics/emacs2.png)
 
 有一点需要注意的就是预览功能仅支持部分Emacs主题，譬如说whiteboard。用`M-x load-theme RET`命令
 
 #### 辅助插件：CDLatex
+
+CDLatex插件使得公式里面的上下标更像上下标，即上标部分的代码显示在上面，下标部分的代码显示在下面。
+
+![Emacs上下标显示](pics/emacs3.png)
+
+同时，CDLatex会自动补全括号，在你打左边括号的同时会自动打上右边对应的括号。
+
+除此之外，CDLatex加速希腊字母的输入。在按下<code>&#96;</code>的时候如果不做操作，就会弹出帮助界面。按<code>&#96;</code>翻页。
+
+![Emacs快速输入希腊字母](pics/emacs4.png)
+
+如图，这个界面下再按<code>&#96;l</code>会输入<code>\lambda</code>。当然你可以在这个界面弹出之前按<code>l</code>来输入<code>\lambda</code>。
+
+#### YASnippet：用模板提升编辑效率
+
+YASnippet基本上是每个Emacs用户必装的插件。用户可以预先存储模板文件，然后通过在编辑文件中输入特定字母然后按`TAB`召唤模板。
+
+YASnippet不仅可以在LaTeX中使用，在任何编程语言中都可以使用。
+
+下面是我写的一个模板示例
+
+![Emacs输入模板](pics/emacs5.png)
+
+当我在编辑LaTeX时，如果想插入图片，那我就直接在文件中输入`fi TAB`，Emacs会将`fi`替换为以上模板，并且把光标移到`$1`的位置，等待我输入图片文件的名称。
+
+在我输入图片文件名称的同时，Emacs会实时地将我的输入和下面图片标题那的`$1`同步，我在图片文件名里输入的东西会原封不动地复制到图片标题的位置。
+
+当我完成输入后，我再次按下`TAB`，光标会跳转到`$0`的位置。
+
+YASnippet的很多常用模板可以通过MELPA下载，可以在Emacs里执行命令`M-x list-packages RET`之后用`C-s`和`C-r`搜索找一找`yasnippet-snippets`这个插件，安装上。
