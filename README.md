@@ -80,7 +80,7 @@ Options -> Configure TeXStudio里
 
 ![TeXStudio配置字体](pics/config_texstudio_4.png)
 
-## Linux + TeX Live + Emacs + AcUTeX + CDLatex + YASnippet环境的介绍
+## Linux + TeX Live + Emacs + AUCTeX + CDLatex + YASnippet环境的介绍
 
 我不会像上边那样讲这个环境是如何安装的，因为如果你不知道去Google，或者Google不出可以看得懂的教程，那我会建议你放弃使用Linux和Emacs的念头。
 
