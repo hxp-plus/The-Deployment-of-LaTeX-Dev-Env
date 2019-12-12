@@ -196,3 +196,34 @@ YASnippet不仅可以在LaTeX中使用，在任何编程语言中都可以使用
 当我完成输入后，我再次按下`TAB`，光标会跳转到`$0`的位置。
 
 YASnippet的很多常用模板可以通过MELPA下载，可以在Emacs里执行命令`M-x list-packages RET`之后用`C-s`和`C-r`搜索找一找`yasnippet-snippets`这个插件，安装上。
+
+## 胡氏德沃夏克键位：从键盘布局层面提高编程速度
+
+### 什么是胡氏德沃夏克键位
+众所周知，正常键盘的QWERTY键位最初的设计意图是为了降低打字员的打字速度，防止打字员打字太快导致打自己故障。这在现在显然是糟糕的设计。而且这种键位左右手负载不均衡。详见下面这张键盘热区图。
+
+![QWERTY键位](pics/qwerty.png)
+
+这显然不是我们想要的，同时我们希望常用的字母都分配在中间一排，这样我们不用移动手指。于是德沃夏克键位就诞生了
+
+![DVORAK键位](pics/dvorak.png)
+
+但是这个键位不能满足程序员的需求，因为编程的时候不需要频繁的输入数字，需要频繁输入那些符号。而德沃夏克键位输入符号要按`Shift`，非常麻烦。于是程序员版德沃夏克键位就诞生了。
+
+![DVORAK PROGRAMMER键位](pics/dvorak_programmer.png)
+
+但是这个键盘键位不能令我满意，因为`Ctrl`、`Alt`和`TAB`太难按了而且不对称，而`Caps Lock`这个我从来不用的按键和极少使用的`Win`键占据了那么好的位置。于是胡氏德沃夏克键位就诞生了。
+
+![DVORAK PROGRAMMER键位](pics/dvorak_hu.png)
+
+### 胡氏德沃夏克键盘键位的安装
+
+详见我的GitHub
+* [Linux](https://github.com/XipingHu/hxp-dvorak-ubuntu)
+* [Windows](https://github.com/XipingHu/hxp-dvorak-windows)
+
+### 胡氏键盘键位适应需要多久？换成这个键位后能否在正常键位上打字？
+
+我的亲身实践表明，适应这个键位需要95天。而且在适应了这个键位后交替使用正常键位和胡氏键位几天后，两种键位都能愉快打字。人是可以同时安装两种键位的。
+
+# 任何问题欢迎在这个GitHub仓库发issue，或者直接QQ联系。如果想改进这个文档欢迎给我发PR！
