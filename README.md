@@ -46,6 +46,9 @@ TeXStudio检索结果
 运行`sudo pacman -S texlive-most texlive-lang texstudio`然后等待安装完成
 
 ## TeXStudio安装的后期配置
+
+[请先读文档! RTFM!](http://texstudio.sourceforge.net/manual/current/usermanual_en.html#SECTION113)
+
 首先，更改默认编译器为XeLaTeX。因为XeLaTeX支持中文。
 Options -> Configure TeXStudio里
 
