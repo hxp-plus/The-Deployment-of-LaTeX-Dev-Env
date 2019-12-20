@@ -88,7 +88,11 @@ Options -> Configure TeXStudio里
 
 我不会像上边那样讲这个环境是如何安装的，因为如果你不知道去Google，或者Google不出可以看得懂的教程，那我会建议你放弃使用Linux和Emacs的念头。
 
-算了，放个懒人包：[点击访问我GitHub上的Emacs配置文件备份](https://github.com/XipingHu/.emacs.d)
+算了，放个懒人包：
+
+[点击访问我GitHub上的Emacs配置文件备份](https://github.com/XipingHu/.emacs.d)
+
+[Windows下懒人包点这里](https://github.com/XipingHu/Emacs-Win10-Install-Guide)
 
 如果你看不懂这个为什么是懒人包以及怎么用，说明你没有学习Emacs，请自行Google学习。
 
