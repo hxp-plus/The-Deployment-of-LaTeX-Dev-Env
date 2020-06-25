@@ -5,7 +5,7 @@
 (本文含有大量超链接，请按住Ctrl点击链接，这样可以在新窗口打开链接)
 ### 对于广大Windows用户
 #### 安装TeX Live环境
-下载安装包大约3点多个G，因此为了快速下载不推荐去国外的地址下载。在这里提供一个ustc的镜像站，[点击这里直接下载](http://mirrors.ustc.edu.cn/CTAN/systems/texlive/Images/texlive.iso)，用校园网下载大约20分钟。
+下载安装包大约3点多个G，因此为了快速下载不推荐去国外的地址下载。在这里提供一个ustc的镜像站，[点击这里进去下载texlive.iso](http://mirrors.ustc.edu.cn/CTAN/systems/texlive/Images/)，用校园网下载大约20分钟。
 
 下载完成之后是iso磁盘镜像文件，不推荐用压缩软件解压。用Win10的资源管理器打开。这么做的目的有两方面：首先是解压浪费时间，其次是解压浪费磁盘空间。直接令Windows创建虚拟磁盘然后挂载镜像是最好的方式。
 
